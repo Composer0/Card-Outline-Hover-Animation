@@ -46,3 +46,25 @@ body {
     background: linear-gradient(50deg, rgb(71, 95, 3), rgb(41, 14, 48));
     overflow: hidden;
 }
+
+.container::before{
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 35px;
+    top: 0; 
+    right: 35px;
+    transition: 1.9s;
+    background: linear-gradient(50deg, rgb(181,243,9), rgb(218,70,255));
+    transform: rotate(-45deg) translate(0, -100px);
+}
+
+.container:hover::before {
+    animation: cardEffect 1.9s;
+}
+
+@keyframes cardEffect {
+    100% {
+        transform: rotate(-45deg) translate(0, 450px);
+    }
+}
