@@ -52,6 +52,7 @@ body {
     position: absolute;
     width: 450px;
     height: 35px;
+    border-radius: 1rem;
     top: 0; 
     right: 35px;
     transition: 1.9s;
